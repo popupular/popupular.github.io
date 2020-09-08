@@ -25,7 +25,24 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   
   <script type="text/javascript">
-    // window.Popupular||function(t,o,a,n,r){var e={_q:[],_p:"demo",autoload:!0};["init","start","destroy"].forEach(function(t){e[t]=function(){return e._q.push({n:t,args:arguments}),Promise.resolve(!0)}}),window.Popupular=e,(a=o.createElement(a)).type="text/javascript",a.src="https://cdn.popupular.io/script/popupular.js",a.async=!0,o.head.appendChild(a)}(window,document,"script");
+window.Popupular  || function (w,d,s,u,p){
+          var o = {_q: [], _p:p, autoload: true};
+
+          ["init", "start", "destroy"].forEach(function(n){
+            o[n] = function(){            
+                o._q.push({n: n, args:arguments});
+                return Promise.resolve(true);
+            };
+          });
+
+          window.Popupular = o;
+          
+            var s = d.createElement(s);
+            s.type = "text/javascript";
+            s.src = u;
+            s.async = true;
+            d.head.appendChild(s);
+        }(window,document,'script',"https://cdn.popupular.io/script/popupular.js", "demo");
   </script>
 </head>
 <body>
