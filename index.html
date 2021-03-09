@@ -44,6 +44,21 @@ window.Popupular  || function (w,d,s,u,p){
             d.head.appendChild(s);
         }(window,document,'script',"https://cdn.popupular.io/script/popupular.js", "demo");
   </script>
+  <!--- Tooltip player -->
+<script type='text/javascript'>
+window.Tooltip||function(t,e){var o={
+url:"https://cdn.tooltip.io/static/player.js",
+key:"6baa32c5-4283-4279-a1cc-ad25259550ef",
+async:true
+};
+
+window.Tooltip={cs:[],_apiKey:o.key};for(
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n<r.length;n++){var a=r[n];i[a]=function(t){return function(){var e=Array.prototype.slice.call(arguments);
+window.Tooltip.cs.push({method:t,args:e})}}(a)}window.Tooltip.API=i;var n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+</script>
+<!--- Tooltip player -->
 </head>
 <body>
   <div id="Hero-block" class="hero-section">
